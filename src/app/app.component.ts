@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
 
   drinkForm: FormGroup; 
   itenAmountValue: number = 0;
-  warmDrinkList: string[] = [];
+  warmDrinkList: string[] = ["sdfsdfdsfsd"];
   coldDrinkList: string[] = [];
   
   constructor(

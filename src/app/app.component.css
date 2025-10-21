@@ -1,3 +1,37 @@
+button, 
+::ng-deep .mat-mdc-radio-button .mat-internal-form-field,
+input,
+.lists,
+span,
+mat-label {
+  font-size: 20px !important;
+}
+
+::ng-deep .mdc-list-item__primary-text{
+  font-size: 20px !important;
+}
+
+.inputs {
+  margin-top: 30px;
+}
+
+.inputs_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.inputs_form #counterInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 30px;
+}
+
 .mat-mdc-list-option[aria-selected="true"].mdc-list-item {
   text-decoration: line-through !important;
   color: gray !important;
