@@ -1,0 +1,4 @@
+.mat-mdc-list-option[aria-selected="true"].mdc-list-item {
+  text-decoration: line-through !important;
+  color: gray !important;
+}
