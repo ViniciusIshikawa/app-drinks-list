@@ -31,26 +31,30 @@
   <section class="lists">
     <div>
       <span>Warm Drinks</span>
-      <mat-selection-list #drinks>
+      <mat-selection-list class="lists_drinks">
         @for (warmDrink of warmDrinkList; track $index) {
-          <button mat-icon-button (click)="deleteSelectedWarmIten($index)">
-            <mat-icon>delete</mat-icon>
-          </button>
+          <div class="lists_drinks-itens">
+            <button mat-icon-button (click)="deleteSelectedWarmIten($index)">
+              <mat-icon>delete</mat-icon>
+            </button>
 
-          <mat-list-option>{{warmDrink}}</mat-list-option>
+            <mat-list-option>{{warmDrink}}</mat-list-option>
+          </div>
         }
       </mat-selection-list>    
 
       <hr>
 
       <span>Cold Drinks</span>
-      <mat-selection-list #drinks>
+      <mat-selection-list class="lists_drinks">
         @for (coldDrink of coldDrinkList; track $index) {
-          <button mat-icon-button (click)="deleteSelectedColdIten($index)">
-            <mat-icon>delete</mat-icon>
-          </button>
+          <div class="lists_drinks-itens">
+            <button mat-icon-button (click)="deleteSelectedColdIten($index)">
+              <mat-icon>delete</mat-icon>
+            </button>
 
-          <mat-list-option>{{coldDrink}}</mat-list-option>
+            <mat-list-option>{{coldDrink}}</mat-list-option>
+          </div>
         }
       </mat-selection-list> 
     </div>
